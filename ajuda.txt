@@ -1,0 +1,26 @@
+Iniciando projeto {
+    - Instala o Node pra poder usar o npm
+    
+    - Instala o Angular
+        $ npm install -g @angular/cli
+
+        - Verificar versao do Angular instalado
+        $ ng --version
+
+    - Crie o projeto em angular
+        $ ng new [NOME-DO-PROJETO]
+
+    - Algumas extenções legais...
+        Angular Extension Pack
+        Ionic Extencion Pack
+        TypeScript Extension Pack
+        Java + Spring Extension Pack
+        Front-End Extension Pack
+
+    - Executar projeto angular...
+	$ ng serve
+
+    - Instalar angulkar material
+	https://material.angular.io/
+	$ ng add @angular/material
+}
