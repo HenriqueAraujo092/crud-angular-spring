@@ -24,3 +24,33 @@ Iniciando projeto {
 	https://material.angular.io/
 	$ ng add @angular/material
 }
+
+criando modulos {
+    - Comece criando o modulo com
+        $ ng g m [NOME-DO-MODULO] --routing
+        OBS: o comando --routing é para o modulo ja ser criado com o arquivo de rotas
+
+    - Crie o componente dentro do modulo..
+        $ ng g c [NOME-DO-COMPONENTE]
+
+    - Para colocar lazy loading nas rotas...
+        No app-routing.module.ts...
+            {
+                path: 'courses',
+                loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule)
+            }
+
+        No app.component.html...
+            <router-outlet></router-outlet>
+}
+
+Customizando tema do Material {
+    - Documentação completa em 
+    ... https://material.io/
+
+    - No arquivo de css global styles.css importe o tema... e o mixing
+    ... @import '@angular/material/theming';
+    ... @include mar-core();
+
+    OBS: Lembrar que o tema se baseia em tres cores principais a primary, secundary e a warning
+}
